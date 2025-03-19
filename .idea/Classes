@@ -1,0 +1,42 @@
+// Класс Автомобиль
+public class Car {
+    private int power;
+    private String model;
+    private int year;
+
+    // Конструктор, геттеры и сеттеры
+
+   public Car(Integer power, String model, Integer year){
+
+           this();
+           this.power = power;
+           this.model = model;
+           this.year = year;
+
+
+               public String getPower(){
+               return power;
+           }
+
+               public void setPower(String power) {
+               this.power = power;
+           }
+
+               public String getModel(){
+               return model;
+           }
+
+               public void setModel(String model) {
+               this.model = model;
+           }
+
+               public String getYear(){
+               return year;
+           }
+
+               public void setYear(String year) {
+               this.year = year;
+           }
+
+
+}
