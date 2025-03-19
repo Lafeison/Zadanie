@@ -1,0 +1,19 @@
+//Реализация алгоритма сортировки Шелла
+public class ShellSort {
+    public static void sort(Car[] cars) {
+        int n = cars.length;
+
+        // Начальная величина интервала
+        for (int gap = n / 2; gap > 0; gap /= 2) {
+            for (int i = gap; i < n; i++) {
+                Car temp = cars[i];
+                int j;
+                // Сравниваем и перемещаем элементы, которые находятся на расстоянии gap
+                for (j = i; j >= gap && cars[j - gap].compareTo(temp) > 0; j -= gap) {
+                    cars[j] = cars[j - gap];
+                }
+                cars[j] = temp;
+            }
+        }
+    }
+}
