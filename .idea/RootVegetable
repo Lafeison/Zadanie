@@ -1,0 +1,42 @@
+// Класс Корнеплод
+public class RootVegetable {
+    private String type;
+    private double weight;
+    private String color;
+
+
+    // Конструктор, геттеры и сеттеры
+
+     public RootVegetable(String type, Integer weight, String color){
+
+               this();
+               this.type = type;
+               this.weight = weight;
+               this.color = color;
+
+
+                    public String getType(){
+                                  return type;
+                              }
+
+                                  public void setType(String type) {
+                                  this.power = type;
+                              }
+
+                                  public String getWeight(){
+                                  return weight;
+                              }
+
+                                  public void setWeight(String weight) {
+                                  this.weight = weight;
+                              }
+
+                                  public String getColor(){
+                                  return color;
+                              }
+
+                                  public void setColor(String color) {
+                                  this.color = color;
+                              }
+
+}
