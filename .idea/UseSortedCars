@@ -1,0 +1,25 @@
+//Основной класс с примером использования
+
+public class Main {
+    public static void main(String[] args) {
+        Car[] cars = {
+            new Car(150, "Toyota", 2020),
+            new Car(120, "Ford", 2018),
+            new Car(200, "BMW", 2021),
+            new Car(180, "Audi", 2019),
+            new Car(130, "Honda", 2022)
+        };
+
+        System.out.println("До сортировки:");
+        for (Car car : cars) {
+            System.out.println(car);
+        }
+
+        ShellSort.sort(cars);
+
+        System.out.println("\nПосле сортировки по мощности:");
+        for (Car car : cars) {
+            System.out.println(car);
+        }
+    }
+}
