@@ -1,0 +1,12 @@
+// Интерфейс для стратегии сортировки
+public interface SortStrategy<T> {
+    void sort(T[] array);
+}
+
+// Реализация алгоритма сортировки Шелла
+public class ShellSort<T extends Comparable<T>> implements SortStrategy<T> {
+    @Override
+    public void sort(T[] array) {
+        // Реализация алгоритма сортировки Шелла
+    }
+}
