@@ -1,0 +1,29 @@
+// Класс Книга
+public class Book {
+    private String author;
+    private String title;
+    private int pages;
+
+    // Конструктор, геттеры и сеттеры
+
+     public Book(String author, String title, Integer pages){
+
+               this();
+               this.power = power;
+               this.model = model;
+               this.year = year;
+
+
+                   public String getAuthor(){
+                   return author;
+               }
+
+                   public String getTitle(){
+                   return title;
+               }
+                  public String getPages(){
+                   return pages;
+               }
+
+    }
+}
