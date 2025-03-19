@@ -1,0 +1,37 @@
+// Класс Автомобиль
+public class Car {
+    private int power;
+    private String model;
+    private int year;
+
+   public Car(int power, String model, int year){
+
+           this();
+           this.power = power;
+           this.model = model;
+           this.year = year;
+    }
+
+    public class Main {
+
+       public static void main(String[] args) {
+
+           List<Car> cars = new ArrayList<>();
+
+           Car lada = new Car(110, "Lada Priora", 2010);
+           Car moskvich = new Car(120, "Moskvich 3", 2023);
+           Car volga = new Car(130, "Volga 410", 1993);
+
+           cars.add(lada);
+           cars.add(moskvich);
+           cars.add(volga);
+
+
+           Collections.sort(cars);
+           System.out.println(cars);
+       }
+    }
+
+
+
+}
