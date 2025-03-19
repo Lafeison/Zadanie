@@ -1,37 +1,19 @@
-// Класс Автомобиль
-public class Car {
-    private int power;
-    private String model;
-    private int year;
+//Реализация алгоритма сортировки Шелла
+public class ShellSort {
+    public static void sort(Car[] cars) {
+        int n = cars.length;
 
-   public Car(int power, String model, int year){
-
-           this();
-           this.power = power;
-           this.model = model;
-           this.year = year;
+        // Начальная величина интервала
+        for (int gap = n / 2; gap > 0; gap /= 2) {
+            for (int i = gap; i < n; i++) {
+                Car temp = cars[i];
+                int j;
+                // Сравниваем и перемещаем элементы, которые находятся на расстоянии gap
+                for (j = i; j >= gap && cars[j - gap].compareTo(temp) > 0; j -= gap) {
+                    cars[j] = cars[j - gap];
+                }
+                cars[j] = temp;
+            }
+        }
     }
-
-    public class Main {
-
-       public static void main(String[] args) {
-
-           List<Car> cars = new ArrayList<>();
-
-           Car lada = new Car(110, "Lada Priora", 2010);
-           Car moskvich = new Car(120, "Moskvich 3", 2023);
-           Car volga = new Car(130, "Volga 410", 1993);
-
-           cars.add(lada);
-           cars.add(moskvich);
-           cars.add(volga);
-
-
-           Collections.sort(cars);
-           System.out.println(cars);
-       }
-    }
-
-
-
 }
